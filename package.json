@@ -1,0 +1,50 @@
+{
+    "name": "js-challenge",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "prettier": "prettier . --write",
+        "start": "node ./src",
+        "test": "mocha src/*.test.js --exit",
+        "func": "mocha src/*.functional.js --exit",
+        "simulation": "node ./src/display.simulate.js",
+        "browser": "webpack --entry ./src/index.js --mode=development && http-server -o --cors"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aragonone/js-challenge.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/aragonone/js-challenge/issues"
+    },
+    "homepage": "https://github.com/aragonone/js-challenge#readme",
+    "dependencies": {
+        "axios": "0.19.0",
+        "crawler": "1.2.2",
+        "debug": "^4.1.1",
+        "execution-time": "1.4.1",
+        "http-server": "0.12.3"
+    },
+    "devDependencies": {
+        "chai": "4.2.0",
+        "chai-as-promised": "7.1.1",
+        "chai-asserttype": "1.0.5",
+        "mocha": "7.1.2",
+        "pre-commit": "1.2.2",
+        "prettier": "2.0.5",
+        "sinon": "9.0.2",
+        "webpack": "4.43.0",
+        "webpack-cli": "3.3.12"
+    },
+    "pre-commit": [
+        "prettier"
+    ],
+    "prettier": {
+        "tabWidth": 4,
+        "singleQuote": true,
+        "arrowParens": "avoid"
+    }
+}
