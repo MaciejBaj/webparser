@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/aragonone/js-challenge#readme",
     "dependencies": {
-        "axios": "0.19.0",
+        "axios": "0.21.1",
         "crawler": "1.2.2",
         "debug": "^4.1.1",
         "execution-time": "1.4.1",
